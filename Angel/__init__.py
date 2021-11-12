@@ -14,4 +14,4 @@ APP_ID = config("APP_ID", default=None, cast=int)
 API_HASH = config("API_HASH", default=None)
 BOT_TOKEN = config("BOT_TOKEN", default=None)
 
-Raizen = TelegramClient('Raizen', APP_ID, API_HASH).start(bot_token=BOT_TOKEN) 
+Angel = TelegramClient('Raizen', APP_ID, API_HASH).start(bot_token=BOT_TOKEN) 
