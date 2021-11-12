@@ -1,0 +1,40 @@
+{
+    "name": "Raizen",
+    "description": "Simple basic code for a telegram bot in Telethon.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "botzhub"
+    ],
+    "repository": "https://github.com/Itzdipesh/RaizenSpamBot",
+    "website": "https://github.com/Itzdipesh/RaizenSpamBot",
+    "success_url": "https://github.com/Itzdipesh/RaizenSpamBot",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        "HEROKU_API_KEY": {
+            "description": "Need to update the bot ,get it from https://heroku.com/account"
+            "value": ""
+        },
+        "HEROKU_APP_NAME": {
+            "description": "NAME  OF THE BOT ON APP NAME PUT SAME"
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
