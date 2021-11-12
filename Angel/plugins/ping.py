@@ -1,6 +1,6 @@
-from .. import Raizen
+from .. import Angel
 from telethon import events
-from Raizen import StartTime
+from Angel import StartTime
 import time
 import datetime
 
@@ -31,7 +31,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@Raizen.on(events.NewMessage(pattern=None))
+@Angel.on(events.NewMessage(pattern=None))
 async def ok(event):
     msg = str(event.text)
     if not msg == "/ping":
