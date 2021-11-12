@@ -6,10 +6,10 @@ import os
 from telethon import events,functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-Raizen_USER = [1801571739]
+Angel_USER = [2068551800]
 
-@Raizen.on(
-    events.NewMessage(pattern="^/spam ?(.*)", func=lambda e: e.sender_id in Raizen_USER)
+@Angel.on(
+    events.NewMessage(pattern="^/spam ?(.*)", func=lambda e: e.sender_id in Angel_USER)
 )
 async def spammer(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
