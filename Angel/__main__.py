@@ -19,4 +19,4 @@ print("Successfully deployed!")
 print("Enjoy! Do visit @MeowUserbot")
 
 if __name__ == "__main__":
-    Raizen.run_until_disconnected()
+    Angel.run_until_disconnected()
