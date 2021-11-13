@@ -1,5 +1,5 @@
 {
-    "name": "Raizen",
+    "name": "Angel",
     "description": "Simple basic code for a telegram bot in Telethon.",
     "logo": "",
     "keywords": [
@@ -8,9 +8,9 @@
         "telegram-bot",
         "botzhub"
     ],
-    "repository": "https://github.com/Itzdipesh/RaizenSpamBot",
-    "website": "https://github.com/Itzdipesh/RaizenSpamBot",
-    "success_url": "https://github.com/Itzdipesh/RaizenSpamBot",
+    "repository": "https://github.com/kaal0408/Angel",
+    "website": "https://github.com/kaal0408/Angel",
+    "success_url": "https://github.com/kaal0408/Angel",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
