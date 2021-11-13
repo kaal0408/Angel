@@ -1,11 +1,11 @@
-from Raizen import Raizen
+from Angel import Angel
 from google_trans_new import google_translator
 import requests
 from PyDictionary import PyDictionary
 from telethon import events
 from telethon.tl import functions
 
-@Raizen.on(events.NewMessage(pattern="/tr ?(.*)"))
+@Angel.on(events.NewMessage(pattern="/tr ?(.*)"))
 async def _(event):
     input_str = event.pattern_match.group(1)
     if event.reply_to_msg_id:
@@ -36,7 +36,7 @@ async def _(event):
     except Exception as exc:
         await event.reply(str(exc))
 
-@Raizen.on(events.NewMessage(pattern="/define"))
+@Angel.on(events.NewMessage(pattern="/define"))
 async def _(event):
     text = event.text[len("/define "):]
     word = f"{text}"
@@ -47,7 +47,7 @@ async def _(event):
     got = net.replace("'", "")
     await event.reply(got)
 
-@Raizen.on(events.NewMessage(pattern="/ud"))
+@Angel.on(events.NewMessage(pattern="/ud"))
 async def _(event):
     text = event.text[len("/ud "):]
     results = requests.get(f'http://api.urbandictionary.com/v0/define?term={text}').json()
