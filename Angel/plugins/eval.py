@@ -12,8 +12,8 @@ from telethon.tl import types
 from telethon.tl.types import *
 from telethon.errors import *
 
-bot = Raizen
-Raizen_USER = [1801571739]
+bot = Angel
+Angel_USER = [2101760006]
 #
 
 async def aexec(code, event):
@@ -23,8 +23,8 @@ async def aexec(code, event):
     )
     return await locals()['__aexec'](event)
 
-@Raizen.on(
-    events.NewMessage(pattern="^/eval ?(.*)", func=lambda e: e.sender_id in Raizen_USER)
+@Angel.on(
+    events.NewMessage(pattern="^/eval ?(.*)", func=lambda e: e.sender_id in Angel_USER)
 )
 async def _(event):
     cmd = event.text.split(" ", maxsplit=1)[1]
