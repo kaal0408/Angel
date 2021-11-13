@@ -53,7 +53,7 @@ MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=True)
 UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 
 
-@Raizen.on(events.NewMessage(pattern="^/bun(?: |$)(.*)"))
+@Angel.on(events.NewMessage(pattern="^/ban(?: |$)(.*)"))
 async def ban(event):
     noob = event.sender_id
     userids = []
@@ -97,7 +97,7 @@ async def ban(event):
         await event.reply(f"Banned  `{str(user.id)}` !")
 
 
-@Raizen.on(events.NewMessage(pattern="^/unbun(?: |$)(.*)"))
+@Angel.on(events.NewMessage(pattern="^/unban(?: |$)(.*)"))
 async def nothanos(event):
     userids = []
     noob = event.sender_id
@@ -128,7 +128,7 @@ async def nothanos(event):
         return
 
 
-@Raizen.on(events.NewMessage(pattern="^/prumote(?: |$)(.*)"))
+@Angel.on(events.NewMessage(pattern="^/promote(?: |$)(.*)"))
 async def promote(event):
     userids = []
     noob = event.sender_id
@@ -177,7 +177,7 @@ async def promote(event):
         return
 
 
-@Raizen.on(events.NewMessage(pattern="^/demute(?: |$)(.*)"))
+@Angel.on(events.NewMessage(pattern="^/demote(?: |$)(.*)"))
 async def demote(event):
     userids = []
     noob = event.sender_id
@@ -226,7 +226,7 @@ async def demote(event):
     await event.reply("`Demoted this Guy Successfully!`")
 
 
-@Raizen.on(events.NewMessage(pattern="^/pin(?: |$)(.*)"))
+@Angel.on(events.NewMessage(pattern="^/pin(?: |$)(.*)"))
 async def pin(event):
     userids = []
     noob = event.sender_id
