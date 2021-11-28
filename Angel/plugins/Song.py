@@ -12,7 +12,7 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from Angel.conf import get_str_key
+from Angel.config import get_str_key
 from Angel.pyrogramee.pluginshelper import get_text, progress
 from Angel import pbot
 
