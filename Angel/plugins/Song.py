@@ -13,7 +13,7 @@ from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 from Angel import Angel
 
-@Angel.on_message(filters.command(["vsong", "video"]))
+@Angel.on(New_message(filters.command(["vsong", "video"])))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
