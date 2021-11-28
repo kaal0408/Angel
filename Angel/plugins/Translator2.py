@@ -1,5 +1,5 @@
 
-from googletrans import Translator
+
 from telethon import events
 
 
