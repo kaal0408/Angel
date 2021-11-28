@@ -1,9 +1,9 @@
 
 
 from telethon import events
-from Angel import tgbot
+from Angel import Angel
 
-@tgbot.on(events.NewMessage(pattern="^/tr ?(.*)"))
+@Angel.on(events.NewMessage(pattern="^/tr ?(.*)"))
 async def _(event):
     input_str = event.pattern_match.group(1)
     if event.reply_to_msg_id:
