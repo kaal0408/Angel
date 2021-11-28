@@ -12,8 +12,6 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-
-from Angel.pyrogramee.pluginshelper import get_text, progress
 from Angel import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
