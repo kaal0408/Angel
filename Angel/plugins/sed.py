@@ -1,4 +1,4 @@
-from .. import Raizen
+from .. import Angel
 from telethon import events, Button, client
 
 Angel_USER = [2068551800]
