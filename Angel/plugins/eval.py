@@ -1,4 +1,4 @@
-from .. import Raizen
+from .. import Angel
 from telethon import events
 import re, os
 import asyncio
