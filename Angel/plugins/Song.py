@@ -11,7 +11,7 @@ from pyrogram.types import Message
 from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
-from Angel import Angel
+from Angel import pbot
 
 @pbot.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client, message: Message):
