@@ -12,8 +12,8 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 from Angel import Angel
-from Angel import pbot
-@pbot.on_message(filters.command(["vsong", "video"]))
+
+@Angel.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
@@ -78,7 +78,7 @@ async def ytmusic(client, message: Message):
             os.remove(files)
 
 
-@pbot.on_message(filters.command(["music", "song"]))
+@Angel.on_message(filters.command(["music", "song"]))
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
     if not urlissed:
@@ -151,7 +151,7 @@ async def ytmusic(client, message: Message):
             os.remove(files)
 
 
-@pbot.on_message(filters.command(["deezer", "dsong"]))
+@Angel.on_message(filters.command(["deezer", "dsong"]))
 async def deezer(client, message: Message):
     pablo = await client.send_message(message.chat.id, "Searching the song")
     sgname = get_text(message)
@@ -200,7 +200,7 @@ def time_to_seconds(time):
 # Lel, Didn't Get Time To Make New One So Used Plugin Made br @mrconfused and @sandy1709 dont edit credits
 
 
-@pbot.on_message(filters.command(["lyric", "lyrics"]))
+@Angel.on_message(filters.command(["lyric", "lyrics"]))
 async def _(client, message):
     lel = await message.reply("Searching For Lyrics.....")
     query = message.text
@@ -234,7 +234,7 @@ async def _(client, message):
         await lel.edit(reply)  # edit or reply
 
 
-@pbot.on_message(filters.command(["glyric", "glyrics"]))
+@Angel.on_message(filters.command(["glyric", "glyrics"]))
 async def lyrics(client, message):
 
     if r"-" in message.text:
