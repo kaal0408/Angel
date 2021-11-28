@@ -18,4 +18,4 @@ async def awake(event):
         "• 𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔 ☞ [「𝐌𝐚𝐧𝐣𝐞𝐞𝐭」❤️🥀](t.me/Hayat_Murat_30)\n\n"
     )
   pm_caption += f"• 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 ☞ [「𝐌𝐚𝐧𝐣𝐞𝐞𝐭」❤️🥀](t.me/Hayat_Murat_30)\n"
-  await Angel.send_file(event. chat_id, file=Raizen_PIC, captions=pm_caption, buttons=but, link_preview=False)
+  await Angel.send_file(event. chat_id, file=Angel_PIC, captions=pm_caption, buttons=but, link_preview=False)
