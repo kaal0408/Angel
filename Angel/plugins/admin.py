@@ -1,4 +1,4 @@
-from .. import Raizen
+from .. import Angel
 from telethon import events
 from telethon.errors import BadRequestError
 from telethon.tl.functions.channels import EditAdminRequest, EditBannedRequest
