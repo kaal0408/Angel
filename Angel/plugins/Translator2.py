@@ -1,7 +1,7 @@
 
 
 from telethon import events
-
+from Angel import tgbot
 
 @tgbot.on(events.NewMessage(pattern="^/tr ?(.*)"))
 async def _(event):
