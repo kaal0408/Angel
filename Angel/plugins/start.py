@@ -6,7 +6,7 @@ Angel_PIC = "https://telegra.ph/file/0a85a39c40572d8266a06.mp4"
 @Angel.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
     await Angel.send_file(event.chat_id,
-                                  Raizen_PIC,
+                                  Angel_PIC,
                                   caption=f"нεℓℓσ vяσ!!\n ι αм ρεяsσηαℓ αssιsтαηт σғ [Hayat_Murat](https://t.me/status_galery_30)",
                                   buttons=[
                                       (Button.inline(
