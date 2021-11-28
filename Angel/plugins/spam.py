@@ -1,4 +1,4 @@
-from .. import Raizen
+from .. import Angel
 import asyncio
 import base64
 import os
